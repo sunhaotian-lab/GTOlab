@@ -1,0 +1,16 @@
+{
+  "feishu": {
+    "app_id": "cli_xxxxxxxxxxxxxxxx",
+    "app_secret": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+  },
+  "tracker": {
+    "chat_id": "oc_xxxxxxxxxxxxxxxxxxxxxxxx",
+    "target_user_id": "ou_xxxxxxxxxxxxxxxxxxxxxxxx",
+    "bitable_app_token": "bascnxxxxxxxxxxxxxxxxxxxxxxxxx",
+    "bitable_table_id": "tblxxxxxxxxxxxxxxxxx"
+  },
+  "schedule": {
+    "run_time": "23:00",
+    "timezone": "Asia/Shanghai"
+  }
+}

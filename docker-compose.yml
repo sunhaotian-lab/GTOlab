@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  feishu-tracker:
+    build: .
+    container_name: feishu-message-tracker
+    restart: unless-stopped
+    volumes:
+      # 挂载配置文件（只读）
+      - ./config.json:/app/config.json:ro
+      # 挂载日志目录
+      - ./logs:/app/logs
+    environment:
+      - TZ=Asia/Shanghai
+    # 如果使用环境变量配置（可选）
+    # environment:
+    #   - FEISHU_APP_ID=${FEISHU_APP_ID}
+    #   - FEISHU_APP_SECRET=${FEISHU_APP_SECRET}
+    #   - CHAT_ID=${CHAT_ID}
+    #   - TARGET_USER_ID=${TARGET_USER_ID}
+    #   - BITABLE_APP_TOKEN=${BITABLE_APP_TOKEN}
+    #   - BITABLE_TABLE_ID=${BITABLE_TABLE_ID}
