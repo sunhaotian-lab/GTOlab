@@ -1,0 +1,19 @@
+{
+  "mcpServers": {
+    "feishu": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@larksuiteoapi/lark-mcp",
+        "mcp",
+        "-a",
+        "cli_xxxxxxxxxxxxxxxx",
+        "-s",
+        "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+      ],
+      "env": {
+        "FEISHU_DOMAIN": "https://open.feishu.cn"
+      }
+    }
+  }
+}

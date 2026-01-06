@@ -8,6 +8,27 @@
 - 筛选特定用户的发言
 - 自动记录到飞书多维表格
 - 支持每日定时执行
+- **🆕 支持 MCP (Model Context Protocol) 集成**
+
+## 使用方式
+
+本项目提供两种使用方式：
+
+### 方式一：传统 Python 脚本（已实现）
+直接运行 Python 脚本，适合：
+- 需要完全控制的场景
+- 服务器部署
+- 定时任务自动化
+
+### 方式二：MCP 集成（推荐用于 AI 交互）
+通过 MCP 协议让 Claude Code 直接调用飞书 API，适合：
+- AI 辅助开发
+- 交互式操作
+- 快速原型开发
+
+**详细指南**：
+- [MCP 完整使用指南](docs/MCP_GUIDE.md) - 一步步配置 MCP
+- [MCP 使用示例](docs/MCP_EXAMPLES.md) - 实际使用案例
 
 ## 使用前准备
 
@@ -127,9 +148,24 @@ A: 修改 `main.py` 中的时间范围参数即可。
 
 ## 技术栈
 
+### Python 脚本方式
 - Python 3.8+
 - 飞书开放平台 API
 - APScheduler (定时任务)
+
+### MCP 方式
+- Node.js (LTS)
+- 飞书官方 MCP 服务器 (@larksuiteoapi/lark-mcp)
+- Claude Code 或其他 MCP 兼容客户端
+
+## 文档导航
+
+- [README.md](README.md) - 项目概览（当前文档）
+- [快速开始指南](docs/QUICKSTART.md) - 10分钟快速上手
+- [部署指南](docs/DEPLOYMENT.md) - 详细部署方案
+- [常见问题解答](docs/FAQ.md) - 38+ 常见问题
+- **[MCP 使用指南](docs/MCP_GUIDE.md)** - MCP 完整配置步骤 ⭐
+- **[MCP 示例](docs/MCP_EXAMPLES.md)** - MCP 实际使用案例 ⭐
 
 ## 许可证
 
